@@ -1,0 +1,183 @@
+//
+// Import Helpers //
+//
+@import "helpers/variables";
+@import "helpers/mixins";
+
+//
+// Import Google Fonts //
+//
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+//
+// Import Basic styles //
+//
+@import "basic/base";
+@import "basic/background";
+@import "basic/image"; 
+@import "basic/list";
+@import "basic/typography";
+
+//
+// Import Elements //
+//
+@import "elements/box";
+@import "elements/button";
+@import "elements/divider";
+@import "elements/text-link";
+@import "elements/logo";
+@import "elements/hoverbox";
+
+
+
+//
+// Import Components //
+//
+@import "components/header";
+@import "components/preloader";
+@import "components/section";
+@import "components/hero-banner";
+@import "components/footer";
+@import "components/owl-carousel";
+@import "components/services";
+@import "components/approach-card";
+@import "components/masonry";
+@import "components/portfolio";
+// @import "components/blog";
+
+
+
+//
+// Import Utilities //
+//
+@import "helpers/utilities";
+
+//
+
+// Import Custom Styles //
+// 
+@import "helpers/custom";
+
+
+.preloader {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+    margin: 0 auto;
+}
+
+.preloader .preloader-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color:red;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    background-color: #fff;
+    -webkit-animation: zoom 2000ms infinite ease;
+    animation: zoom 2000ms infinite ease;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+}
+.preloader .preloader-circle2 {
+    border-top-color: #0078ff;
+}
+.preloader .preloader-img {
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 6px;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+}
+
+.preloader .preloader-img img {
+    max-width: 55px;
+}
+.preloader .pere-text strong{
+    font-weight: 800;
+    color:#dca73a ;
+    text-transform: uppercase;
+}
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s; 
+    }
+}
+
+@keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+    }
+}
+
+.service--info {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    @media (min-width: 767px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    h5.site-section-heading {
+      &:before {
+        width: 40px;
+      }
+    }
+    ul {
+      padding-left: 1rem;
+    }
+  }
+}

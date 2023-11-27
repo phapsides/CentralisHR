@@ -1,0 +1,60 @@
+//
+// Divider Style //
+//
+hr {
+	background: $color-black-01;
+	height: 1px;
+	border: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+.text-center {
+	hr {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+.text-right {
+	hr {
+		margin-left: auto;
+	}
+}
+
+.site-section-heading {
+    position: relative;
+    padding-bottom: 20px;
+
+    &:before {
+        content: "";
+        bottom: 0;
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background: $color-brand;
+    }
+}
+
+.text-center {
+    &.site-section-heading {
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.text-right {
+    .site-section-heading {
+        &:before {
+            right: 0;
+        }
+    }
+}
+
+.text-white {
+    &.site-section-heading {
+        &:before {
+            background: $color-white;
+        }
+    }
+}

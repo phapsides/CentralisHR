@@ -1,0 +1,18 @@
+footer {
+    p {
+        margin: 0;
+    }
+    .text-md-left {
+        align-self: center;
+    }
+    hr {
+        background: $color-offWhite;
+    }
+    .logo-placeholder {
+        background: url('../images/centralis_hr_consulting_logo.svg') no-repeat;
+        margin: auto;
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+    }
+}

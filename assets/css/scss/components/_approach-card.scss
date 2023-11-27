@@ -1,0 +1,30 @@
+.approach-container {
+    border-left: 7px solid $color-brand;
+    background-color: $color-white;
+    border-radius: 6px;
+    box-shadow: 11px 11px 5px #0000000c;
+    margin-bottom: 20px;
+
+    div[class^=col-]:not(.row) {
+        margin-bottom: 0;
+    }
+
+    .copy-container {
+        padding: 20px 30px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    &.approach-container--border-right {
+        border-left: 0;
+        border-right: 7px solid $color-brand;
+
+        .copy-container {
+            
+        }
+    }
+}

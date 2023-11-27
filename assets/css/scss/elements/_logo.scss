@@ -1,0 +1,18 @@
+.logo-placeholder {
+    display: block;
+    text-indent: -9999px;
+    width: 154px;
+    height: 54px;
+    background-size: 154px 54px;
+    position: relative;
+    left: -7px;
+}
+
+
+svg {
+    &.logo {
+        width: auto;
+        height: 54px;
+        max-height: 54px;
+    }
+}
